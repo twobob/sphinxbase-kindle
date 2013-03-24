@@ -1,0 +1,52 @@
+unlimit.lo: unlimit.c \
+ /opt/arm-2012.03/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/time.h \
+ /opt/arm-2012.03/bin/../arm-none-linux-gnueabi/libc/usr/include/features.h \
+ /opt/arm-2012.03/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/predefs.h \
+ /opt/arm-2012.03/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/cdefs.h \
+ /opt/arm-2012.03/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/wordsize.h \
+ /opt/arm-2012.03/bin/../arm-none-linux-gnueabi/libc/usr/include/gnu/stubs.h \
+ /opt/arm-2012.03/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/types.h \
+ /opt/arm-2012.03/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/typesizes.h \
+ /opt/arm-2012.03/bin/../arm-none-linux-gnueabi/libc/usr/include/time.h \
+ /opt/arm-2012.03/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/time.h \
+ /opt/arm-2012.03/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/select.h \
+ /opt/arm-2012.03/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/select.h \
+ /opt/arm-2012.03/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/sigset.h \
+ /opt/arm-2012.03/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/resource.h \
+ /opt/arm-2012.03/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/resource.h \
+ ../../../include/sphinxbase/unlimit.h \
+ ../../../include/sphinxbase/sphinxbase_export.h
+
+/opt/arm-2012.03/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/time.h:
+
+/opt/arm-2012.03/bin/../arm-none-linux-gnueabi/libc/usr/include/features.h:
+
+/opt/arm-2012.03/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/predefs.h:
+
+/opt/arm-2012.03/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/cdefs.h:
+
+/opt/arm-2012.03/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/wordsize.h:
+
+/opt/arm-2012.03/bin/../arm-none-linux-gnueabi/libc/usr/include/gnu/stubs.h:
+
+/opt/arm-2012.03/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/types.h:
+
+/opt/arm-2012.03/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/typesizes.h:
+
+/opt/arm-2012.03/bin/../arm-none-linux-gnueabi/libc/usr/include/time.h:
+
+/opt/arm-2012.03/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/time.h:
+
+/opt/arm-2012.03/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/select.h:
+
+/opt/arm-2012.03/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/select.h:
+
+/opt/arm-2012.03/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/sigset.h:
+
+/opt/arm-2012.03/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/resource.h:
+
+/opt/arm-2012.03/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/resource.h:
+
+../../../include/sphinxbase/unlimit.h:
+
+../../../include/sphinxbase/sphinxbase_export.h:
