@@ -27,7 +27,8 @@ uname -v = #55-Ubuntu SMP Wed Dec 5 17:45:18 UTC 2012
 /usr/bin/oslevel       = unknown
 /bin/universe          = unknown
 
-PATH: /opt/arm-2012.03/bin
+PATH: /opt/arm-2007q3/bin
+PATH: /home/simon/bin
 PATH: /usr/local/sbin
 PATH: /usr/local/bin
 PATH: /usr/sbin
@@ -46,7 +47,7 @@ configure:2700: result: /usr/bin/install -c
 configure:2711: checking whether build environment is sane
 configure:2761: result: yes
 configure:2810: checking for arm-none-linux-gnueabi-strip
-configure:2826: found /opt/arm-2012.03/bin/arm-none-linux-gnueabi-strip
+configure:2826: found /opt/arm-2007q3/bin/arm-none-linux-gnueabi-strip
 configure:2837: result: arm-none-linux-gnueabi-strip
 configure:2902: checking for a thread-safe mkdir -p
 configure:2941: result: /bin/mkdir -p
@@ -62,34 +63,29 @@ configure:3140: result: arm-none-linux-gnueabi
 configure:3187: checking for style of include used by make
 configure:3215: result: GNU
 configure:3245: checking for arm-none-linux-gnueabi-gcc
-configure:3261: found /opt/arm-2012.03/bin/arm-none-linux-gnueabi-gcc
+configure:3261: found /opt/arm-2007q3/bin/arm-none-linux-gnueabi-gcc
 configure:3272: result: arm-none-linux-gnueabi-gcc
 configure:3541: checking for C compiler version
 configure:3550: arm-none-linux-gnueabi-gcc --version >&5
-arm-none-linux-gnueabi-gcc (Sourcery CodeBench Lite 2012.03-57) 4.6.3
-Copyright (C) 2011 Free Software Foundation, Inc.
+arm-none-linux-gnueabi-gcc (CodeSourcery Sourcery G++ Lite 2007q3-51) 4.2.1
+Copyright (C) 2007 Free Software Foundation, Inc.
 This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 configure:3561: $? = 0
 configure:3550: arm-none-linux-gnueabi-gcc -v >&5
 Using built-in specs.
-COLLECT_GCC=arm-none-linux-gnueabi-gcc
-COLLECT_LTO_WRAPPER=/opt/arm-2012.03/bin/../libexec/gcc/arm-none-linux-gnueabi/4.6.3/lto-wrapper
 Target: arm-none-linux-gnueabi
-Configured with: /scratch/nsidwell/arm/linux/src/gcc-4.6-2012.03/configure --build=i686-pc-linux-gnu --host=i686-pc-linux-gnu --target=arm-none-linux-gnueabi --enable-threads --disable-libmudflap --disable-libssp --disable-libstdcxx-pch --enable-extra-sgxxlite-multilibs --with-arch=armv5te --with-gnu-as --with-gnu-ld --with-specs='%{save-temps: -fverbose-asm} %{funwind-tables|fno-unwind-tables|mabi=*|ffreestanding|nostdlib:;:-funwind-tables} -D__CS_SOURCERYGXX_MAJ__=2012 -D__CS_SOURCERYGXX_MIN__=3 -D__CS_SOURCERYGXX_REV__=57 %{O2:%{!fno-remove-local-statics: -fremove-local-statics}} %{O*:%{O|O0|O1|O2|Os:;:%{!fno-remove-local-statics: -fremove-local-statics}}}' --enable-languages=c,c++ --enable-shared --enable-lto --enable-symvers=gnu --enable-__cxa_atexit --with-pkgversion='Sourcery CodeBench Lite 2012.03-57' --with-bugurl=https://support.codesourcery.com/GNUToolchain/ --disable-nls --prefix=/opt/codesourcery --with-sysroot=/opt/codesourcery/arm-none-linux-gnueabi/libc --with-build-sysroot=/scratch/nsidwell/arm/linux/install/arm-none-linux-gnueabi/libc --with-gmp=/scratch/nsidwell/arm/linux/obj/host-libs-2012.03-57-arm-none-linux-gnueabi-i686-pc-linux-gnu/usr --with-mpfr=/scratch/nsidwell/arm/linux/obj/host-libs-2012.03-57-arm-none-linux-gnueabi-i686-pc-linux-gnu/usr --with-mpc=/scratch/nsidwell/arm/linux/obj/host-libs-2012.03-57-arm-none-linux-gnueabi-i686-pc-linux-gnu/usr --with-ppl=/scratch/nsidwell/arm/linux/obj/host-libs-2012.03-57-arm-none-linux-gnueabi-i686-pc-linux-gnu/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-cloog=/scratch/nsidwell/arm/linux/obj/host-libs-2012.03-57-arm-none-linux-gnueabi-i686-pc-linux-gnu/usr --with-libelf=/scratch/nsidwell/arm/linux/obj/host-libs-2012.03-57-arm-none-linux-gnueabi-i686-pc-linux-gnu/usr --disable-libgomp --enable-poison-system-directories --with-build-time-tools=/scratch/nsidwell/arm/linux/install/arm-none-linux-gnueabi/bin --with-build-time-tools=/scratch/nsidwell/arm/linux/install/arm-none-linux-gnueabi/bin
+Configured with: /scratch/paul/lite/linux/src/gcc-4.2/configure --build=i686-pc-linux-gnu --host=i686-pc-linux-gnu --target=arm-none-linux-gnueabi --enable-threads --disable-libmudflap --disable-libssp --disable-libgomp --disable-libstdcxx-pch --with-gnu-as --with-gnu-ld --enable-languages=c,c++ --enable-shared --enable-symvers=gnu --enable-__cxa_atexit --with-pkgversion=CodeSourcery Sourcery G++ Lite 2007q3-51 --with-bugurl=https://support.codesourcery.com/GNUToolchain/ --disable-nls --prefix=/opt/codesourcery --with-sysroot=/opt/codesourcery/arm-none-linux-gnueabi/libc --with-build-sysroot=/scratch/paul/lite/linux/install/arm-none-linux-gnueabi/libc --enable-poison-system-directories --with-build-time-tools=/scratch/paul/lite/linux/install/arm-none-linux-gnueabi/bin --with-build-time-tools=/scratch/paul/lite/linux/install/arm-none-linux-gnueabi/bin
 Thread model: posix
-gcc version 4.6.3 (Sourcery CodeBench Lite 2012.03-57) 
+gcc version 4.2.1 (CodeSourcery Sourcery G++ Lite 2007q3-51)
 configure:3561: $? = 0
 configure:3550: arm-none-linux-gnueabi-gcc -V >&5
-arm-none-linux-gnueabi-gcc: error: unrecognized option '-V'
-arm-none-linux-gnueabi-gcc: fatal error: no input files
-compilation terminated.
+arm-none-linux-gnueabi-gcc: '-V' option must have argument
 configure:3561: $? = 1
 configure:3550: arm-none-linux-gnueabi-gcc -qversion >&5
-arm-none-linux-gnueabi-gcc: error: unrecognized option '-qversion'
-arm-none-linux-gnueabi-gcc: fatal error: no input files
-compilation terminated.
+arm-none-linux-gnueabi-gcc: unrecognized option '-qversion'
+arm-none-linux-gnueabi-gcc: no input files
 configure:3561: $? = 1
 configure:3581: checking whether the C compiler works
 configure:3603: arm-none-linux-gnueabi-gcc -g -O2 -Wall   conftest.c  >&5
@@ -129,30 +125,25 @@ configure:4220: checking for arm-none-linux-gnueabi-gcc
 configure:4247: result: arm-none-linux-gnueabi-gcc
 configure:4516: checking for C compiler version
 configure:4525: arm-none-linux-gnueabi-gcc --version >&5
-arm-none-linux-gnueabi-gcc (Sourcery CodeBench Lite 2012.03-57) 4.6.3
-Copyright (C) 2011 Free Software Foundation, Inc.
+arm-none-linux-gnueabi-gcc (CodeSourcery Sourcery G++ Lite 2007q3-51) 4.2.1
+Copyright (C) 2007 Free Software Foundation, Inc.
 This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 configure:4536: $? = 0
 configure:4525: arm-none-linux-gnueabi-gcc -v >&5
 Using built-in specs.
-COLLECT_GCC=arm-none-linux-gnueabi-gcc
-COLLECT_LTO_WRAPPER=/opt/arm-2012.03/bin/../libexec/gcc/arm-none-linux-gnueabi/4.6.3/lto-wrapper
 Target: arm-none-linux-gnueabi
-Configured with: /scratch/nsidwell/arm/linux/src/gcc-4.6-2012.03/configure --build=i686-pc-linux-gnu --host=i686-pc-linux-gnu --target=arm-none-linux-gnueabi --enable-threads --disable-libmudflap --disable-libssp --disable-libstdcxx-pch --enable-extra-sgxxlite-multilibs --with-arch=armv5te --with-gnu-as --with-gnu-ld --with-specs='%{save-temps: -fverbose-asm} %{funwind-tables|fno-unwind-tables|mabi=*|ffreestanding|nostdlib:;:-funwind-tables} -D__CS_SOURCERYGXX_MAJ__=2012 -D__CS_SOURCERYGXX_MIN__=3 -D__CS_SOURCERYGXX_REV__=57 %{O2:%{!fno-remove-local-statics: -fremove-local-statics}} %{O*:%{O|O0|O1|O2|Os:;:%{!fno-remove-local-statics: -fremove-local-statics}}}' --enable-languages=c,c++ --enable-shared --enable-lto --enable-symvers=gnu --enable-__cxa_atexit --with-pkgversion='Sourcery CodeBench Lite 2012.03-57' --with-bugurl=https://support.codesourcery.com/GNUToolchain/ --disable-nls --prefix=/opt/codesourcery --with-sysroot=/opt/codesourcery/arm-none-linux-gnueabi/libc --with-build-sysroot=/scratch/nsidwell/arm/linux/install/arm-none-linux-gnueabi/libc --with-gmp=/scratch/nsidwell/arm/linux/obj/host-libs-2012.03-57-arm-none-linux-gnueabi-i686-pc-linux-gnu/usr --with-mpfr=/scratch/nsidwell/arm/linux/obj/host-libs-2012.03-57-arm-none-linux-gnueabi-i686-pc-linux-gnu/usr --with-mpc=/scratch/nsidwell/arm/linux/obj/host-libs-2012.03-57-arm-none-linux-gnueabi-i686-pc-linux-gnu/usr --with-ppl=/scratch/nsidwell/arm/linux/obj/host-libs-2012.03-57-arm-none-linux-gnueabi-i686-pc-linux-gnu/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-cloog=/scratch/nsidwell/arm/linux/obj/host-libs-2012.03-57-arm-none-linux-gnueabi-i686-pc-linux-gnu/usr --with-libelf=/scratch/nsidwell/arm/linux/obj/host-libs-2012.03-57-arm-none-linux-gnueabi-i686-pc-linux-gnu/usr --disable-libgomp --enable-poison-system-directories --with-build-time-tools=/scratch/nsidwell/arm/linux/install/arm-none-linux-gnueabi/bin --with-build-time-tools=/scratch/nsidwell/arm/linux/install/arm-none-linux-gnueabi/bin
+Configured with: /scratch/paul/lite/linux/src/gcc-4.2/configure --build=i686-pc-linux-gnu --host=i686-pc-linux-gnu --target=arm-none-linux-gnueabi --enable-threads --disable-libmudflap --disable-libssp --disable-libgomp --disable-libstdcxx-pch --with-gnu-as --with-gnu-ld --enable-languages=c,c++ --enable-shared --enable-symvers=gnu --enable-__cxa_atexit --with-pkgversion=CodeSourcery Sourcery G++ Lite 2007q3-51 --with-bugurl=https://support.codesourcery.com/GNUToolchain/ --disable-nls --prefix=/opt/codesourcery --with-sysroot=/opt/codesourcery/arm-none-linux-gnueabi/libc --with-build-sysroot=/scratch/paul/lite/linux/install/arm-none-linux-gnueabi/libc --enable-poison-system-directories --with-build-time-tools=/scratch/paul/lite/linux/install/arm-none-linux-gnueabi/bin --with-build-time-tools=/scratch/paul/lite/linux/install/arm-none-linux-gnueabi/bin
 Thread model: posix
-gcc version 4.6.3 (Sourcery CodeBench Lite 2012.03-57) 
+gcc version 4.2.1 (CodeSourcery Sourcery G++ Lite 2007q3-51)
 configure:4536: $? = 0
 configure:4525: arm-none-linux-gnueabi-gcc -V >&5
-arm-none-linux-gnueabi-gcc: error: unrecognized option '-V'
-arm-none-linux-gnueabi-gcc: fatal error: no input files
-compilation terminated.
+arm-none-linux-gnueabi-gcc: '-V' option must have argument
 configure:4536: $? = 1
 configure:4525: arm-none-linux-gnueabi-gcc -qversion >&5
-arm-none-linux-gnueabi-gcc: error: unrecognized option '-qversion'
-arm-none-linux-gnueabi-gcc: fatal error: no input files
-compilation terminated.
+arm-none-linux-gnueabi-gcc: unrecognized option '-qversion'
+arm-none-linux-gnueabi-gcc: no input files
 configure:4536: $? = 1
 configure:4540: checking whether we are using the GNU C compiler
 configure:4568: result: yes
@@ -164,18 +155,14 @@ configure:4754: checking dependency style of arm-none-linux-gnueabi-gcc
 configure:4864: result: gcc3
 configure:4883: checking for arm-none-linux-gnueabi-gcc option to accept ISO C99
 configure:5032: arm-none-linux-gnueabi-gcc  -c -g -O2 -Wall  conftest.c >&5
-conftest.c:59:29: error: expected ';', ',' or ')' before 'text'
-conftest.c: In function 'test_varargs':
-conftest.c:80:9: warning: variable 'fnumber' set but not used [-Wunused-but-set-variable]
-conftest.c:79:7: warning: variable 'number' set but not used [-Wunused-but-set-variable]
-conftest.c:78:15: warning: variable 'str' set but not used [-Wunused-but-set-variable]
+conftest.c:59: error: expected ';', ',' or ')' before 'text'
 conftest.c: In function 'main':
-conftest.c:111:3: warning: implicit declaration of function 'test_restrict' [-Wimplicit-function-declaration]
-conftest.c:113:18: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'newvar'
-conftest.c:113:18: error: 'newvar' undeclared (first use in this function)
-conftest.c:113:18: note: each undeclared identifier is reported only once for each function it appears in
-conftest.c:123:3: error: 'for' loop initial declarations are only allowed in C99 mode
-conftest.c:123:3: note: use option -std=c99 or -std=gnu99 to compile your code
+conftest.c:111: warning: implicit declaration of function 'test_restrict'
+conftest.c:113: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'newvar'
+conftest.c:113: error: 'newvar' undeclared (first use in this function)
+conftest.c:113: error: (Each undeclared identifier is reported only once
+conftest.c:113: error: for each function it appears in.)
+conftest.c:123: error: 'for' loop initial declaration used outside C99 mode
 configure:5032: $? = 1
 configure: failed program was:
 | /* confdefs.h */
@@ -323,10 +310,6 @@ configure: failed program was:
 |   return 0;
 | }
 configure:5032: arm-none-linux-gnueabi-gcc -std=gnu99 -c -g -O2 -Wall  conftest.c >&5
-conftest.c: In function 'test_varargs':
-conftest.c:80:9: warning: variable 'fnumber' set but not used [-Wunused-but-set-variable]
-conftest.c:79:7: warning: variable 'number' set but not used [-Wunused-but-set-variable]
-conftest.c:78:15: warning: variable 'str' set but not used [-Wunused-but-set-variable]
 configure:5032: $? = 0
 configure:5052: result: -std=gnu99
 configure:5154: checking for arm-none-linux-gnueabi-gcc -std=gnu99 option to accept ISO Standard C
@@ -338,8 +321,7 @@ configure:5224: checking how to run the C preprocessor
 configure:5255: arm-none-linux-gnueabi-gcc -std=gnu99 -E  conftest.c
 configure:5255: $? = 0
 configure:5269: arm-none-linux-gnueabi-gcc -std=gnu99 -E  conftest.c
-conftest.c:9:28: fatal error: ac_nonexistent.h: No such file or directory
-compilation terminated.
+conftest.c:9:28: error: ac_nonexistent.h: No such file or directory
 configure:5269: $? = 1
 configure: failed program was:
 | /* confdefs.h */
@@ -355,8 +337,7 @@ configure:5294: result: arm-none-linux-gnueabi-gcc -std=gnu99 -E
 configure:5314: arm-none-linux-gnueabi-gcc -std=gnu99 -E  conftest.c
 configure:5314: $? = 0
 configure:5328: arm-none-linux-gnueabi-gcc -std=gnu99 -E  conftest.c
-conftest.c:9:28: fatal error: ac_nonexistent.h: No such file or directory
-compilation terminated.
+conftest.c:9:28: error: ac_nonexistent.h: No such file or directory
 configure:5328: $? = 1
 configure: failed program was:
 | /* confdefs.h */
@@ -414,9 +395,7 @@ configure:5604: $? = 0
 configure:5604: result: yes
 configure:5617: checking whether byte ordering is bigendian
 configure:5632: arm-none-linux-gnueabi-gcc -std=gnu99 -c -g -O2 -Wall  conftest.c >&5
-conftest.c:20:9: error: unknown type name 'not'
-conftest.c:20:15: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'universal'
-conftest.c:20:15: error: unknown type name 'universal'
+conftest.c:20: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'a'
 configure:5632: $? = 1
 configure: failed program was:
 | /* confdefs.h */
@@ -446,8 +425,10 @@ configure:5677: arm-none-linux-gnueabi-gcc -std=gnu99 -c -g -O2 -Wall  conftest.
 configure:5677: $? = 0
 configure:5695: arm-none-linux-gnueabi-gcc -std=gnu99 -c -g -O2 -Wall  conftest.c >&5
 conftest.c: In function 'main':
-conftest.c:26:4: error: unknown type name 'not'
-conftest.c:26:12: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'endian'
+conftest.c:26: error: 'not' undeclared (first use in this function)
+conftest.c:26: error: (Each undeclared identifier is reported only once
+conftest.c:26: error: for each function it appears in.)
+conftest.c:26: error: expected ';' before 'big'
 configure:5695: $? = 1
 configure: failed program was:
 | /* confdefs.h */
@@ -485,7 +466,7 @@ configure:5823: result: no
 configure:5841: checking return type of signal handlers
 configure:5859: arm-none-linux-gnueabi-gcc -std=gnu99 -c -g -O2 -Wall  conftest.c >&5
 conftest.c: In function 'main':
-conftest.c:25:1: error: void value not ignored as it ought to be
+conftest.c:25: error: void value not ignored as it ought to be
 configure:5859: $? = 1
 configure: failed program was:
 | /* confdefs.h */
@@ -522,7 +503,7 @@ configure:5874: arm-none-linux-gnueabi-gcc -std=gnu99 -c -g -O2 -Wall  conftest.
 configure:5874: $? = 0
 configure:5874: arm-none-linux-gnueabi-gcc -std=gnu99 -c -g -O2 -Wall  conftest.c >&5
 conftest.c: In function 'main':
-conftest.c:56:24: error: expected expression before ')' token
+conftest.c:56: error: expected expression before ')' token
 configure:5874: $? = 1
 configure: failed program was:
 | /* confdefs.h */
@@ -588,13 +569,10 @@ configure: failed program was:
 configure:5874: result: yes
 configure:5888: checking size of long long
 configure:5893: arm-none-linux-gnueabi-gcc -std=gnu99 -c -g -O2 -Wall  conftest.c >&5
-conftest.c: In function 'main':
-conftest.c:57:12: warning: variable 'test_array' set but not used [-Wunused-but-set-variable]
 configure:5893: $? = 0
 configure:5893: arm-none-linux-gnueabi-gcc -std=gnu99 -c -g -O2 -Wall  conftest.c >&5
 conftest.c: In function 'main':
-conftest.c:57:12: error: size of array 'test_array' is negative
-conftest.c:57:12: warning: variable 'test_array' set but not used [-Wunused-but-set-variable]
+conftest.c:57: error: size of array 'test_array' is negative
 configure:5893: $? = 1
 configure: failed program was:
 | /* confdefs.h */
@@ -661,8 +639,7 @@ configure: failed program was:
 | }
 configure:5893: arm-none-linux-gnueabi-gcc -std=gnu99 -c -g -O2 -Wall  conftest.c >&5
 conftest.c: In function 'main':
-conftest.c:57:12: error: size of array 'test_array' is negative
-conftest.c:57:12: warning: variable 'test_array' set but not used [-Wunused-but-set-variable]
+conftest.c:57: error: size of array 'test_array' is negative
 configure:5893: $? = 1
 configure: failed program was:
 | /* confdefs.h */
@@ -729,8 +706,7 @@ configure: failed program was:
 | }
 configure:5893: arm-none-linux-gnueabi-gcc -std=gnu99 -c -g -O2 -Wall  conftest.c >&5
 conftest.c: In function 'main':
-conftest.c:57:12: error: size of array 'test_array' is negative
-conftest.c:57:12: warning: variable 'test_array' set but not used [-Wunused-but-set-variable]
+conftest.c:57: error: size of array 'test_array' is negative
 configure:5893: $? = 1
 configure: failed program was:
 | /* confdefs.h */
@@ -797,8 +773,7 @@ configure: failed program was:
 | }
 configure:5893: arm-none-linux-gnueabi-gcc -std=gnu99 -c -g -O2 -Wall  conftest.c >&5
 conftest.c: In function 'main':
-conftest.c:57:12: error: size of array 'test_array' is negative
-conftest.c:57:12: warning: variable 'test_array' set but not used [-Wunused-but-set-variable]
+conftest.c:57: error: size of array 'test_array' is negative
 configure:5893: $? = 1
 configure: failed program was:
 | /* confdefs.h */
@@ -864,31 +839,20 @@ configure: failed program was:
 |   return 0;
 | }
 configure:5893: arm-none-linux-gnueabi-gcc -std=gnu99 -c -g -O2 -Wall  conftest.c >&5
-conftest.c: In function 'main':
-conftest.c:57:12: warning: variable 'test_array' set but not used [-Wunused-but-set-variable]
 configure:5893: $? = 0
 configure:5893: arm-none-linux-gnueabi-gcc -std=gnu99 -c -g -O2 -Wall  conftest.c >&5
-conftest.c: In function 'main':
-conftest.c:57:12: warning: variable 'test_array' set but not used [-Wunused-but-set-variable]
 configure:5893: $? = 0
 configure:5893: arm-none-linux-gnueabi-gcc -std=gnu99 -c -g -O2 -Wall  conftest.c >&5
-conftest.c: In function 'main':
-conftest.c:57:12: warning: variable 'test_array' set but not used [-Wunused-but-set-variable]
 configure:5893: $? = 0
 configure:5893: arm-none-linux-gnueabi-gcc -std=gnu99 -c -g -O2 -Wall  conftest.c >&5
-conftest.c: In function 'main':
-conftest.c:57:12: warning: variable 'test_array' set but not used [-Wunused-but-set-variable]
 configure:5893: $? = 0
 configure:5908: result: 8
 configure:5922: checking size of long
 configure:5927: arm-none-linux-gnueabi-gcc -std=gnu99 -c -g -O2 -Wall  conftest.c >&5
-conftest.c: In function 'main':
-conftest.c:58:12: warning: variable 'test_array' set but not used [-Wunused-but-set-variable]
 configure:5927: $? = 0
 configure:5927: arm-none-linux-gnueabi-gcc -std=gnu99 -c -g -O2 -Wall  conftest.c >&5
 conftest.c: In function 'main':
-conftest.c:58:12: error: size of array 'test_array' is negative
-conftest.c:58:12: warning: variable 'test_array' set but not used [-Wunused-but-set-variable]
+conftest.c:58: error: size of array 'test_array' is negative
 configure:5927: $? = 1
 configure: failed program was:
 | /* confdefs.h */
@@ -956,8 +920,7 @@ configure: failed program was:
 | }
 configure:5927: arm-none-linux-gnueabi-gcc -std=gnu99 -c -g -O2 -Wall  conftest.c >&5
 conftest.c: In function 'main':
-conftest.c:58:12: error: size of array 'test_array' is negative
-conftest.c:58:12: warning: variable 'test_array' set but not used [-Wunused-but-set-variable]
+conftest.c:58: error: size of array 'test_array' is negative
 configure:5927: $? = 1
 configure: failed program was:
 | /* confdefs.h */
@@ -1025,8 +988,7 @@ configure: failed program was:
 | }
 configure:5927: arm-none-linux-gnueabi-gcc -std=gnu99 -c -g -O2 -Wall  conftest.c >&5
 conftest.c: In function 'main':
-conftest.c:58:12: error: size of array 'test_array' is negative
-conftest.c:58:12: warning: variable 'test_array' set but not used [-Wunused-but-set-variable]
+conftest.c:58: error: size of array 'test_array' is negative
 configure:5927: $? = 1
 configure: failed program was:
 | /* confdefs.h */
@@ -1093,16 +1055,10 @@ configure: failed program was:
 |   return 0;
 | }
 configure:5927: arm-none-linux-gnueabi-gcc -std=gnu99 -c -g -O2 -Wall  conftest.c >&5
-conftest.c: In function 'main':
-conftest.c:58:12: warning: variable 'test_array' set but not used [-Wunused-but-set-variable]
 configure:5927: $? = 0
 configure:5927: arm-none-linux-gnueabi-gcc -std=gnu99 -c -g -O2 -Wall  conftest.c >&5
-conftest.c: In function 'main':
-conftest.c:58:12: warning: variable 'test_array' set but not used [-Wunused-but-set-variable]
 configure:5927: $? = 0
 configure:5927: arm-none-linux-gnueabi-gcc -std=gnu99 -c -g -O2 -Wall  conftest.c >&5
-conftest.c: In function 'main':
-conftest.c:58:12: warning: variable 'test_array' set but not used [-Wunused-but-set-variable]
 configure:5927: $? = 0
 configure:5942: result: 4
 configure:5955: checking for popen
@@ -1115,7 +1071,7 @@ configure:5955: $? = 0
 configure:5955: result: yes
 configure:5955: checking for snprintf
 configure:5955: arm-none-linux-gnueabi-gcc -std=gnu99 -o conftest -g -O2 -Wall   conftest.c  >&5
-conftest.c:48:6: warning: conflicting types for built-in function 'snprintf' [enabled by default]
+conftest.c:48: warning: conflicting types for built-in function 'snprintf'
 configure:5955: $? = 0
 configure:5955: result: yes
 configure:5965: checking errno.h usability
@@ -1129,8 +1085,8 @@ configure:5965: result: yes
 configure:5965: checking for errno.h
 configure:5965: result: yes
 configure:6011: checking for ld used by GCC
-configure:6075: result: /opt/arm-2012.03/arm-none-linux-gnueabi/bin/ld
-configure:6082: checking if the linker (/opt/arm-2012.03/arm-none-linux-gnueabi/bin/ld) is GNU ld
+configure:6075: result: /opt/arm-2007q3/arm-none-linux-gnueabi/bin/ld
+configure:6082: checking if the linker (/opt/arm-2007q3/arm-none-linux-gnueabi/bin/ld) is GNU ld
 configure:6095: result: yes
 configure:6102: checking for shared library run path origin
 configure:6115: result: done
@@ -1144,7 +1100,7 @@ configure:6683: $? = 0
 configure:6694: result: install-shextern size_t iconv (iconv_t cd, char * *inbuf, size_t *inbytesleft, char * *outbuf, size_t *outbytesleft);
 configure:6718: checking for sgesv_ in -llapack
 configure:6743: arm-none-linux-gnueabi-gcc -std=gnu99 -o conftest -g -O2 -Wall   conftest.c -llapack   >&5
-/opt/arm-2012.03/bin/../lib/gcc/arm-none-linux-gnueabi/4.6.3/../../../../arm-none-linux-gnueabi/bin/ld: cannot find -llapack
+/opt/arm-2007q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.2.1/../../../../arm-none-linux-gnueabi/bin/ld: cannot find -llapack
 collect2: ld returned 1 exit status
 configure:6743: $? = 1
 configure: failed program was:
@@ -1193,7 +1149,7 @@ configure: failed program was:
 configure:6752: result: no
 configure:6835: checking for log in -lm
 configure:6860: arm-none-linux-gnueabi-gcc -std=gnu99 -o conftest -g -O2 -Wall   conftest.c -lm   >&5
-conftest.c:36:6: warning: conflicting types for built-in function 'log' [enabled by default]
+conftest.c:36: warning: conflicting types for built-in function 'log'
 configure:6860: $? = 0
 configure:6869: result: yes
 configure:6900: checking pthread.h usability
@@ -1212,8 +1168,7 @@ configure:6935: $? = 0
 configure:6944: result: yes
 configure:7031: checking pulse/pulseaudio.h usability
 configure:7031: arm-none-linux-gnueabi-gcc -std=gnu99 -c -g -O2 -Wall  conftest.c >&5
-conftest.c:66:30: fatal error: pulse/pulseaudio.h: No such file or directory
-compilation terminated.
+conftest.c:66:30: error: pulse/pulseaudio.h: No such file or directory
 configure:7031: $? = 1
 configure: failed program was:
 | /* confdefs.h */
@@ -1285,8 +1240,7 @@ configure: failed program was:
 configure:7031: result: no
 configure:7031: checking pulse/pulseaudio.h presence
 configure:7031: arm-none-linux-gnueabi-gcc -std=gnu99 -E  conftest.c
-conftest.c:33:30: fatal error: pulse/pulseaudio.h: No such file or directory
-compilation terminated.
+conftest.c:33:30: error: pulse/pulseaudio.h: No such file or directory
 configure:7031: $? = 1
 configure: failed program was:
 | /* confdefs.h */
@@ -1327,8 +1281,7 @@ configure:7031: checking for pulse/pulseaudio.h
 configure:7031: result: no
 configure:7132: checking jack/jack.h usability
 configure:7132: arm-none-linux-gnueabi-gcc -std=gnu99 -c -g -O2 -Wall  conftest.c >&5
-conftest.c:66:23: fatal error: jack/jack.h: No such file or directory
-compilation terminated.
+conftest.c:66:23: error: jack/jack.h: No such file or directory
 configure:7132: $? = 1
 configure: failed program was:
 | /* confdefs.h */
@@ -1400,8 +1353,7 @@ configure: failed program was:
 configure:7132: result: no
 configure:7132: checking jack/jack.h presence
 configure:7132: arm-none-linux-gnueabi-gcc -std=gnu99 -E  conftest.c
-conftest.c:33:23: fatal error: jack/jack.h: No such file or directory
-compilation terminated.
+conftest.c:33:23: error: jack/jack.h: No such file or directory
 configure:7132: $? = 1
 configure: failed program was:
 | /* confdefs.h */
@@ -1459,14 +1411,14 @@ configure:7372: result: /bin/sed
 configure:7390: checking for fgrep
 configure:7452: result: /bin/grep -F
 configure:7487: checking for ld used by arm-none-linux-gnueabi-gcc -std=gnu99
-configure:7554: result: /opt/arm-2012.03/arm-none-linux-gnueabi/bin/ld
-configure:7561: checking if the linker (/opt/arm-2012.03/arm-none-linux-gnueabi/bin/ld) is GNU ld
+configure:7554: result: /opt/arm-2007q3/arm-none-linux-gnueabi/bin/ld
+configure:7561: checking if the linker (/opt/arm-2007q3/arm-none-linux-gnueabi/bin/ld) is GNU ld
 configure:7576: result: yes
 configure:7588: checking for BSD- or MS-compatible name lister (nm)
-configure:7637: result: /opt/arm-2012.03/bin/arm-none-linux-gnueabi-nm -B
-configure:7755: checking the name lister (/opt/arm-2012.03/bin/arm-none-linux-gnueabi-nm -B) interface
+configure:7637: result: /opt/arm-2007q3/bin/arm-none-linux-gnueabi-nm -B
+configure:7755: checking the name lister (/opt/arm-2007q3/bin/arm-none-linux-gnueabi-nm -B) interface
 configure:7762: arm-none-linux-gnueabi-gcc -std=gnu99 -c -g -O2 -Wall  conftest.c >&5
-configure:7765: /opt/arm-2012.03/bin/arm-none-linux-gnueabi-nm -B "conftest.o"
+configure:7765: /opt/arm-2007q3/bin/arm-none-linux-gnueabi-nm -B "conftest.o"
 configure:7768: output
 00000000 B some_variable
 configure:7775: result: BSD nm
@@ -1478,25 +1430,25 @@ configure:7927: checking whether the shell understands some XSI constructs
 configure:7937: result: yes
 configure:7941: checking whether the shell understands "+="
 configure:7947: result: yes
-configure:7982: checking for /opt/arm-2012.03/arm-none-linux-gnueabi/bin/ld option to reload object files
+configure:7982: checking for /opt/arm-2007q3/arm-none-linux-gnueabi/bin/ld option to reload object files
 configure:7989: result: -r
 configure:8018: checking for arm-none-linux-gnueabi-objdump
-configure:8034: found /opt/arm-2012.03/bin/arm-none-linux-gnueabi-objdump
+configure:8034: found /opt/arm-2007q3/bin/arm-none-linux-gnueabi-objdump
 configure:8045: result: arm-none-linux-gnueabi-objdump
 configure:8117: checking how to recognize dependent libraries
 configure:8313: result: pass_all
 configure:8333: checking for arm-none-linux-gnueabi-ar
-configure:8349: found /opt/arm-2012.03/bin/arm-none-linux-gnueabi-ar
+configure:8349: found /opt/arm-2007q3/bin/arm-none-linux-gnueabi-ar
 configure:8360: result: arm-none-linux-gnueabi-ar
 configure:8438: checking for arm-none-linux-gnueabi-strip
 configure:8465: result: arm-none-linux-gnueabi-strip
 configure:8537: checking for arm-none-linux-gnueabi-ranlib
-configure:8553: found /opt/arm-2012.03/bin/arm-none-linux-gnueabi-ranlib
+configure:8553: found /opt/arm-2007q3/bin/arm-none-linux-gnueabi-ranlib
 configure:8564: result: arm-none-linux-gnueabi-ranlib
-configure:8694: checking command to parse /opt/arm-2012.03/bin/arm-none-linux-gnueabi-nm -B output from arm-none-linux-gnueabi-gcc -std=gnu99 object
+configure:8694: checking command to parse /opt/arm-2007q3/bin/arm-none-linux-gnueabi-nm -B output from arm-none-linux-gnueabi-gcc -std=gnu99 object
 configure:8812: arm-none-linux-gnueabi-gcc -std=gnu99 -c -g -O2 -Wall  conftest.c >&5
 configure:8815: $? = 0
-configure:8819: /opt/arm-2012.03/bin/arm-none-linux-gnueabi-nm -B conftest.o \| sed -n -e 's/^.*[	 ]\([ABCDGIRSTW][ABCDGIRSTW]*\)[	 ][	 ]*\([_A-Za-z][_A-Za-z0-9]*\)$/\1 \2 \2/p' \> conftest.nm
+configure:8819: /opt/arm-2007q3/bin/arm-none-linux-gnueabi-nm -B conftest.o \| sed -n -e 's/^.*[	 ]\([ABCDGIRSTW][ABCDGIRSTW]*\)[	 ][	 ]*\([_A-Za-z][_A-Za-z0-9]*\)$/\1 \2 \2/p' \> conftest.nm
 configure:8822: $? = 0
 configure:8876: arm-none-linux-gnueabi-gcc -std=gnu99 -o conftest -g -O2 -Wall   conftest.c conftstm.o >&5
 configure:8879: $? = 0
@@ -1509,7 +1461,7 @@ configure:9906: checking for objdir
 configure:9921: result: .libs
 configure:10217: checking if arm-none-linux-gnueabi-gcc -std=gnu99 supports -fno-rtti -fno-exceptions
 configure:10235: arm-none-linux-gnueabi-gcc -std=gnu99 -c -g -O2 -Wall  -fno-rtti -fno-exceptions conftest.c >&5
-cc1: warning: command line option '-fno-rtti' is valid for C++/ObjC++ but not for C [enabled by default]
+cc1: warning: command line option "-fno-rtti" is valid for C++/ObjC++ but not for C
 configure:10239: $? = 0
 configure:10252: result: no
 configure:10272: checking for arm-none-linux-gnueabi-gcc -std=gnu99 option to produce PIC
@@ -1526,7 +1478,7 @@ configure:10683: $? = 0
 configure:10705: result: yes
 configure:10713: checking if arm-none-linux-gnueabi-gcc -std=gnu99 supports -c -o file.o
 configure:10760: result: yes
-configure:10793: checking whether the arm-none-linux-gnueabi-gcc -std=gnu99 linker (/opt/arm-2012.03/arm-none-linux-gnueabi/bin/ld) supports shared libraries
+configure:10793: checking whether the arm-none-linux-gnueabi-gcc -std=gnu99 linker (/opt/arm-2007q3/arm-none-linux-gnueabi/bin/ld) supports shared libraries
 configure:11779: result: yes
 configure:11816: checking whether -lc should be explicitly linked in
 configure:11821: arm-none-linux-gnueabi-gcc -std=gnu99 -c -g -O2 -Wall  conftest.c >&5
@@ -1579,8 +1531,7 @@ No package 'sndfile' found
 configure:13874: result: no
 configure:13888: checking sndfile.h usability
 configure:13888: arm-none-linux-gnueabi-gcc -std=gnu99 -c -g -O2 -Wall  conftest.c >&5
-conftest.c:70:21: fatal error: sndfile.h: No such file or directory
-compilation terminated.
+conftest.c:70:21: error: sndfile.h: No such file or directory
 configure:13888: $? = 1
 configure: failed program was:
 | /* confdefs.h */
@@ -1656,8 +1607,7 @@ configure: failed program was:
 configure:13888: result: no
 configure:13888: checking sndfile.h presence
 configure:13888: arm-none-linux-gnueabi-gcc -std=gnu99 -E  conftest.c
-conftest.c:37:21: fatal error: sndfile.h: No such file or directory
-compilation terminated.
+conftest.c:37:21: error: sndfile.h: No such file or directory
 configure:13888: $? = 1
 configure: failed program was:
 | /* confdefs.h */
@@ -1717,8 +1667,7 @@ No package 'samplerate' found
 configure:13957: result: no
 configure:13971: checking samplerate.h usability
 configure:13971: arm-none-linux-gnueabi-gcc -std=gnu99 -c -g -O2 -Wall  conftest.c >&5
-conftest.c:70:24: fatal error: samplerate.h: No such file or directory
-compilation terminated.
+conftest.c:70:24: error: samplerate.h: No such file or directory
 configure:13971: $? = 1
 configure: failed program was:
 | /* confdefs.h */
@@ -1794,8 +1743,7 @@ configure: failed program was:
 configure:13971: result: no
 configure:13971: checking samplerate.h presence
 configure:13971: arm-none-linux-gnueabi-gcc -std=gnu99 -E  conftest.c
-conftest.c:37:24: fatal error: samplerate.h: No such file or directory
-compilation terminated.
+conftest.c:37:24: error: samplerate.h: No such file or directory
 configure:13971: $? = 1
 configure: failed program was:
 | /* confdefs.h */
@@ -1897,7 +1845,6 @@ config.status:1147: creating test/unit/test_util/Makefile
 config.status:1147: creating test/regression/testfuncs.sh
 config.status:1147: creating test/regression/Makefile
 config.status:1147: creating include/config.h
-config.status:1319: include/config.h is unchanged
 config.status:1147: creating include/sphinx_config.h
 config.status:1319: include/sphinx_config.h is unchanged
 config.status:1367: executing depfiles commands
@@ -1999,7 +1946,7 @@ acl_cv_hardcode_libdir_flag_spec='${wl}-rpath ${wl}$libdir'
 acl_cv_hardcode_libdir_separator=
 acl_cv_hardcode_minus_L=no
 acl_cv_libext=a
-acl_cv_path_LD=/opt/arm-2012.03/arm-none-linux-gnueabi/bin/ld
+acl_cv_path_LD=/opt/arm-2007q3/arm-none-linux-gnueabi/bin/ld
 acl_cv_prog_gnu_ld=yes
 acl_cv_rpath=done
 acl_cv_shlibext=so
@@ -2015,8 +1962,8 @@ lt_cv_file_magic_test_file=
 lt_cv_ld_reload_flag=-r
 lt_cv_nm_interface='BSD nm'
 lt_cv_objdir=.libs
-lt_cv_path_LD=/opt/arm-2012.03/arm-none-linux-gnueabi/bin/ld
-lt_cv_path_NM='/opt/arm-2012.03/bin/arm-none-linux-gnueabi-nm -B'
+lt_cv_path_LD=/opt/arm-2007q3/arm-none-linux-gnueabi/bin/ld
+lt_cv_path_NM='/opt/arm-2007q3/bin/arm-none-linux-gnueabi-nm -B'
 lt_cv_prog_compiler_c_o=yes
 lt_cv_prog_compiler_pic_works=yes
 lt_cv_prog_compiler_rtti_exceptions=no
@@ -2076,7 +2023,7 @@ INSTALL_SCRIPT='${INSTALL}'
 INSTALL_STRIP_PROGRAM='$(install_sh) -c -s'
 LAPACK_LITE_FALSE='#'
 LAPACK_LITE_TRUE=''
-LD='/opt/arm-2012.03/arm-none-linux-gnueabi/bin/ld'
+LD='/opt/arm-2007q3/arm-none-linux-gnueabi/bin/ld'
 LDFLAGS=''
 LIBICONV=''
 LIBOBJS=''
@@ -2088,7 +2035,7 @@ LTLIBICONV=''
 LTLIBOBJS=''
 MAKEINFO='${SHELL} /home/simon/SVN/sphinxbase-0.8/missing --run makeinfo'
 MKDIR_P='/bin/mkdir -p'
-NM='/opt/arm-2012.03/bin/arm-none-linux-gnueabi-nm -B'
+NM='/opt/arm-2007q3/bin/arm-none-linux-gnueabi-nm -B'
 NMEDIT=''
 OBJDUMP='arm-none-linux-gnueabi-objdump'
 OBJEXT='o'

@@ -1,5 +1,5 @@
-utf8.lo: utf8.c ../../../include/sphinxbase/prim_type.h \
- ../../../include/sphinx_config.h
+utf8.lo utf8.o: utf8.c ../../../include/sphinxbase/prim_type.h \
+  ../../../include/sphinx_config.h
 
 ../../../include/sphinxbase/prim_type.h:
 
