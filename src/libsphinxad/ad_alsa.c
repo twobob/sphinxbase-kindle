@@ -216,7 +216,7 @@ setlevels(const char *dev)
     snd_mixer_selem_id_alloca(&sid);
     snd_mixer_selem_id_set_name(sid, "Mic");
     if ((elem = snd_mixer_find_selem(handle, sid)) == NULL) {
-        fprintf(stderr, "Warning: Could not find Mic element\n");
+   /*    fprintf(stderr, "Warning: Could not find Mic element\n");*/
     }
     else {
 	if (snd_mixer_selem_has_capture_switch(elem)) {
@@ -371,7 +371,7 @@ ad_read(ad_rec_t * handle, int16 * buf, int32 max)
     int32 length, err;
 
     if (!handle->recording) {
-	fprintf(stderr, "Recording is stopped, start recording with ad_start_rec\n");
+/*	fprintf(stderr, "Recording is stopped, start recording with ad_start_rec\n");  */
 	return AD_EOF;
     }
 
@@ -380,7 +380,7 @@ ad_read(ad_rec_t * handle, int16 * buf, int32 max)
         length = 0;
     }
     else if (length == -EPIPE) {
-        fprintf(stderr, "Input overrun, read calls are too rare (non-fatal)\n");
+ /*      fprintf(stderr, "Input overrun, read calls are too rare (non-fatal)\n");   */
         err = snd_pcm_prepare(handle->dspH);
 	if (err < 0) {
 		fprintf(stderr, "Can't recover from underrun: %s\n",
