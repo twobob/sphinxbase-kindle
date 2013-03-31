@@ -371,7 +371,7 @@ ad_read(ad_rec_t * handle, int16 * buf, int32 max)
     int32 length, err;
 
     if (!handle->recording) {
-/*	fprintf(stderr, "Recording is stopped, start recording with ad_start_rec\n");  */
+	fprintf(stderr, "Recording is stopped, start recording with ad_start_rec\n"); 
 	return AD_EOF;
     }
 
